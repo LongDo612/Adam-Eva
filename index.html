@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/apple.js"></script>
+    <script src="js/human.js"></script>
+</head>
+<body>
+    <script>
+        let adam = new Human("Adam", "Male", 70);
+        let eva = new Human("Eva", "Female", 45);
+        let apple = new Apple();
+        adam.say("Tao ngon the nho! Ra an di Eva!");
+        eva.say("An luon so gi!");
+        adam.eat(apple);
+        let count = 0;
+        while (count < 8){
+            eva.eat(apple);
+            count++;
+        }
+        alert("con lai " + apple.getWeight() + " mieng tao!");
+        adam.say("May an gi lam the con kia!");
+    </script>
+</body>
+</html>
